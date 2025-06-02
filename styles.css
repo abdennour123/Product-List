@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: "Red Hat Text", sans-serif;
 }
 
@@ -21,4 +20,75 @@
     --light-font-weight: 400;
     --semibold-font-weight: 600;
     --bold-font-weight: 700;
+}
+
+body{
+    background-color: var(--rose-50);
+    color: var(--rose-900);
+}
+
+section{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.menu-product{
+    width: 100%;
+    height: 100%;
+    margin-top: 10rem;
+}
+
+/* .sidebar-card{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+} */
+
+.card-container{
+    width: 100%;
+    height: 100vh;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5rem;
+}
+
+.card img{
+    border-radius: 12px;
+}
+
+.card button{
+    width: 160px;
+    height: 40px;
+    border: 2px solid var(--red-color);
+    color: var(--rose-900);
+    border-radius: 24px;
+    outline: none;
+    font-weight: var(--semibold-font-weight);
+    transform: translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center
+}
+.card button:hover{
+    color: var(--red-color);
+}
+
+.card i{
+    color: var(--red-color);
 }
