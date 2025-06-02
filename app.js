@@ -25,16 +25,16 @@ fetch('./assets/data.json')
             cardicon.classList.add("fa-solid", "fa-cart-plus")
             addBtn.appendChild(cardicon);
 
+            const category = document.createElement('h4'); // card category
+            category.textContent = `${item.category}`;
+            cardBody.appendChild(category);
+
             const title = document.createElement('h3'); // card title
             title.textContent = item.name;
             cardBody.appendChild(title);
 
-            const category = document.createElement('p'); // card category
-            category.textContent = `Category: ${item.category}`;
-            cardBody.appendChild(category);
-
             const price = document.createElement('p'); // card price
-            price.textContent = `Price: $${item.price.toFixed(2)}`; 
+            price.textContent = `$${item.price.toFixed(2)}`; 
             cardBody.appendChild(price);
 
             // Append body to card
