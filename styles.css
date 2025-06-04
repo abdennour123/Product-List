@@ -66,7 +66,7 @@ section{
     border-radius: 12px;
 }
 
-.card button{
+.card .addCardBtn{
     width: 130px;
     height: 35px;
     border: 2px solid var(--red-color);
@@ -83,12 +83,59 @@ section{
     padding-left: 30px;
     transition: transform 0.1s ease-in, sacle 0.1s ease-in, color 0.1s ease-in;
 }
-.card button:hover{
+.card .addCardBtn:hover{
     color: var(--red-color);
     transform: translateY(-22px);
     scale: 1.02;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.quantityBtn{
+    width: 130px;
+    height: 35px;
+    border: 2px solid var(--red-color);
+    color: var(--rose-900);
+    border-radius: 24px;
+    outline: none;
+    font-weight: var(--semibold-font-weight);
+    transform: translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-around;
+    background-color: var(--red-color);
+    color: white;
+}
+
+.quantityBtn:hover{
+    transform: translateY(-22px);
+    scale: 1.02;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.quantityBtn button{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    background-color: var(--red-color);
+    color: white;
+    font-weight: var(--bold-font-weight);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.quantityBtn button:hover{
+    background-color: white;
+    color: var(--red-color);
+}
+
+.quantityBtn span{
+    font-weight: var(--light-font-weight);
+    font-size: 14px;
 }
 
 .card i{
@@ -156,4 +203,8 @@ section{
     font-size: 14px;
     font-weight: var(--semibold-font-weight);
     color: var(--rose-500);
+}
+
+.active{
+    display: none;
 }
